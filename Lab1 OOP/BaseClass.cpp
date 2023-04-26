@@ -77,7 +77,7 @@ void Point::MoveTo(int NewX, int NewY)
 	Hide();  //сделать фигуру(!) невидимой
 	X = NewX; //поменять координаты
 	Y = NewY;
-	GetHitbox();
+	//GetHitbox();
 	HideHitbox();
 	Show();  //показать фигуру(!) на новом месте
 };

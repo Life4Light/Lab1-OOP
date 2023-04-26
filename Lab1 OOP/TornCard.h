@@ -8,6 +8,4 @@ public:
 	TornCard(int left, int top, int right1, int bottom, int width, int height);
 	~TornCard();
 	void Show();
-	
-	
 };

@@ -120,7 +120,7 @@ void main()
 			//PressKey(56);
 			//ATornCard.Drag(20);
 			
-			Game(ACard, AKatana, AScotch,ATornCard,20);
+			Game(ACard, AKatana, AScotch,ATornCard,10);
 			
 			//===================================================================
 		}//end if
@@ -171,21 +171,21 @@ void Game(Point *card, Katana *katana, Scotch *scotch,TornCard *tornCard, int st
 		{
 			katanaX -= step;
 			katana->MoveTo(katanaX, katanaY);
-			Sleep(50);
+			Sleep(25);
 		}
 
 		if (KEY_DOWN(VK_RIGHT))  //стрелка вправо  39
 		{
 			katanaX += step;
 			katana->MoveTo(katanaX, katanaY);
-			Sleep(50);
+			Sleep(25);
 		}
 
 		if (KEY_DOWN(VK_DOWN))   //стрелка вниз  40
 		{
 			katanaY += step;
 			katana->MoveTo(katanaX, katanaY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 
@@ -193,35 +193,35 @@ void Game(Point *card, Katana *katana, Scotch *scotch,TornCard *tornCard, int st
 		{
 			katanaY -= step;
 			katana->MoveTo(katanaX, katanaY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (KEY_DOWN(87)	)	//w(вверх) 119
 		{
 			cardY -= step;
 			cardCurrent->MoveTo(cardX, cardY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (KEY_DOWN(65))		//a(влево) 97
 		{
 			cardX -= step;
 			cardCurrent->MoveTo(cardX, cardY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (KEY_DOWN(68))		//d(вправо) 100
 		{
 			cardX += step;
 			cardCurrent->MoveTo(cardX, cardY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (KEY_DOWN(83))		//s(вниз) 115
 		{
 			cardY += step;
 			cardCurrent->MoveTo(cardX, cardY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 
@@ -229,28 +229,28 @@ void Game(Point *card, Katana *katana, Scotch *scotch,TornCard *tornCard, int st
 		{
 			scotchY -= step;
 			scotch->MoveTo(scotchX, scotchY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (KEY_DOWN(72))		//h(влево) 97
 		{
 			scotchX -= step;
 			scotch->MoveTo(scotchX, scotchY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (KEY_DOWN(75))		//k(вправо) 100
 		{
 			scotchX += step;
 			scotch->MoveTo(scotchX, scotchY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (KEY_DOWN(74))		//j(вниз) 115
 		{
 			scotchY += step;
 			scotch->MoveTo(scotchX, scotchY);
-			Sleep(50);
+			Sleep(25);
 
 		}
 		if (is_figure_intersec(cardCurrent, katana))
